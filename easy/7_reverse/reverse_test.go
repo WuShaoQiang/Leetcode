@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	input = []int{123, -123, 120}
+	input = []int{123, -123, 120, 123456789123}
 )
 
 func TestReverse(t *testing.T) {
