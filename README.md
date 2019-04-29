@@ -61,3 +61,22 @@ leetcode with test file
 - 119_getRow
 
 - 121_maxProfit
+
+- 122_maxProfit
+
+- 125_isPalindrome
+
+- 136_singleNumber
+
+- 141_hasCycle
+
+- 155_MinStack
+
+- 160_getIntersectionNode
+
+- 167_twoSum
+
+- 168_convertToTitle
+
+- 169_majorityElement
+
