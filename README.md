@@ -80,3 +80,42 @@ leetcode with test file
 
 - 169_majorityElement
 
+- 171_titleToNumber
+
+- 172_trailingZeros
+
+- 189_rotate
+
+- 190_reverseBits
+
+- 191_hammingWeight
+
+- 198_rob
+
+- 202_isHappy
+
+- 203_removeElements
+
+- 204_countPrimes
+
+- 205_isIsomorphic
+
+- 206_reverseList
+
+- 217_containDuplicate
+
+- 219_containsNearbyDuplicate
+
+- 226_invertTree
+
+- 231_isPowerOfTwo
+
+- 234_isPalindrome
+
+- 235_lowestCommonAncestor
+
+- 237_deleteNode
+
+- 242_isAnagram
+
+- 257_binaryTreePaths
