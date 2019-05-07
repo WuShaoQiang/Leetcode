@@ -119,3 +119,45 @@ leetcode with test file
 - 242_isAnagram
 
 - 257_binaryTreePaths
+
+- 258_addDigits
+
+- 263_isUgly
+
+- 268_missingNumber
+
+- 283_moveZeros
+
+- 290_wordPattern
+
+- 292_canWinNim
+
+- 303_SumRange
+
+- 326_isPowerOfThree
+
+- 342_isPowerOfFour
+
+- 344_reverseString
+
+- 345_reverseVowels
+
+- 349_intersection
+
+- 350_intersect
+
+- 367_isPerfectSquare
+
+- 371_getSum
+
+- 383_canConstruct
+
+- 387_firstUniqChar
+
+- 389_findTheDifference
+
+- 400_findNthDigit
+
+- 404_sumOfLeftLeaves
+
+- 405_toHex
