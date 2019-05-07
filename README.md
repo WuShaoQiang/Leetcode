@@ -4,6 +4,8 @@ leetcode with test file
 
 ## Easy
 
+- 1_twoSum
+
 - 7_reverse
 
 - 9_isPalindrome
