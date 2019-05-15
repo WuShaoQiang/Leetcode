@@ -185,3 +185,11 @@ leetcode with test file
 - 572_isSubtree
 
 - 606_tree2str
+
+- 617_mergeTrees
+
+- 637_averageOfLevels
+
+- 653_findTarget
+
+- 669_trimBST

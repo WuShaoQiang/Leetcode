@@ -21,6 +21,9 @@ One longest palindrome that can be built is "dccaccd", whose length is 7.
 
 */
 
+// 执行用时 : 0 ms, 在Longest Palindrome的Go提交中击败了100.00% 的用户
+// 内存消耗 : 2.2 MB, 在Longest Palindrome的Go提交中击败了68.00% 的用户
+
 func longestPalindrome(s string) int {
 	m := make(map[byte]int)
 	res := 0
@@ -31,16 +34,15 @@ func longestPalindrome(s string) int {
 	val := 0
 
 	for _, val = range m {
+		// 至少两个
 		if val/2 > 0 {
 			// 忘记考虑"bananas"这样的情况
+			// 大于2的奇数取小于它的偶数
 			res += val - val%2
 		}
 	}
 
-	if val == len(s) {
-		return val
-	}
-
+	// 如果字符串的字符个数全部为偶数就不用加一
 	if res == len(s) {
 		return res
 	}
