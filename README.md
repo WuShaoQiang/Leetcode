@@ -163,3 +163,25 @@ leetcode with test file
 - 404_sumOfLeftLeaves
 
 - 405_toHex
+
+- 409_longestPalindrome
+
+- 412_fizzBuzz
+
+- 414_thirdMax
+
+- 437_pathSum
+
+- 501_findMode
+
+- 530_getMinimumDifference
+
+- 538_convertBST
+
+- 543_diameterOfBinaryTree
+
+- 563_findTilt 
+
+- 572_isSubtree
+
+- 606_tree2str

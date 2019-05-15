@@ -6,7 +6,7 @@ import (
 )
 
 var (
-	input = []int{26, -1, 0, 100, 255}
+	input = []int{26, -1, 0, 100,255}
 )
 
 func TestToHex(t *testing.T) {
