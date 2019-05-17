@@ -1,122 +1,102 @@
 package addBinary
 
-import (
-	"strconv"
-)
+/*
+Given two binary strings, return their sum (also a binary string).
 
-// func addBinary(a string, b string) string {
-// 	if a == "0" {
-// 		return b
-// 	}
+The input strings are both non-empty and contains only characters 1 or 0.
 
-// 	if b == "0" {
-// 		return a
-// 	}
+Example 1:
 
-// 	aNum, _ := strconv.Atoi(a)
-// 	bNum, _ := strconv.Atoi(b)
+Input: a = "11", b = "1"
+Output: "100"
 
-// 	strs := strings.Split(strconv.Itoa(aNum+bNum), "")
+Example 2:
 
-// 	add := false
+Input: a = "1010", b = "1011"
+Output: "10101"
+*/
 
-// 	for i := len(strs) - 1; i > 0; i-- {
-// 		switch strs[i] {
-// 		case "0":
-// 			if add {
-// 				strs[i] = "1"
-// 				add = false
-// 			}
-// 		case "1":
-// 			if add {
-// 				strs[i] = "0"
-// 				add = true
-// 			}
-// 		case "2":
-// 			if add {
-// 				strs[i] = "1"
-// 			} else {
-// 				strs[i] = "0"
-// 			}
-// 			add = true
-// 		}
-// 	}
-
-// 	switch strs[0] {
-// 	case "0":
-// 		if add {
-// 			strs[0] = "1"
-// 		}
-// 	case "1":
-// 		if add {
-// 			strs[0] = "10"
-// 		}
-// 	case "2":
-// 		if add {
-// 			strs[0] = "11"
-// 		} else {
-// 			strs[0] = "10"
-// 		}
-// 	}
-
-// 	return strings.Join(strs, "")
-
-// }
+// Runtime: 0 ms, faster than 100.00% of Go online submissions for Add Binary.
+// Memory Usage: 2.2 MB, less than 84.50% of Go online submissions for Add Binary.
 
 func addBinary(a string, b string) string {
-
-	lengthLonger, lengthShorter := 0, 0
-	tmp := ""
-
+	// 为了下面编程方便,选择b长a短
 	if len(a) > len(b) {
-		lengthLonger = len(a)
-		lengthShorter = len(b)
-	} else {
-		lengthLonger = len(b)
-		lengthShorter = len(a)
-		tmp = b
-		b = a
-		a = tmp
+		a, b = b, a
 	}
+	// 差距
+	dis := len(b) - len(a)
+	res := make([]byte, len(b)+1)
+	// 定义res的索引
+	idx := len(res) - 1
+	var carry bool
+	// 基于小的长度遍历
+	for i := len(a) - 1; i >= 0; i-- {
+		// 有进位的情况
+		if carry {
+			switch {
+			case a[i] == '1' && b[i+dis] == '1':
+				res[idx] = '1'
+				idx--
+				carry = true
+			case a[i] == '1' || b[i+dis] == '1':
+				res[idx] = '0'
+				idx--
+				carry = true
 
-	resultArray := make([]int, lengthLonger+1)
-	carry := 0
-	for i := lengthLonger; i >= 0; i-- {
-		if i > (lengthLonger - lengthShorter) {
-			currentA, _ := strconv.Atoi(a[i-1 : i])
-			currentB, _ := strconv.Atoi(b[lengthShorter-lengthLonger+i-1 : lengthShorter-lengthLonger+i])
-			resultArray[i] = currentA + currentB + carry
-			if resultArray[i] == 2 {
-				resultArray[i] = 0
-				carry = 1
-			} else if resultArray[i] == 3 {
-				resultArray[i] = 1
-				carry = 1
-			} else {
-				carry = 0
+			case a[i] == '0' && b[i+dis] == '0':
+				res[idx] = '1'
+				idx--
+				carry = false
 			}
-		} else if i > 0 {
-			currentA, _ := strconv.Atoi(a[i-1 : i])
-			resultArray[i] = currentA + carry
-			if resultArray[i] == 2 {
-				resultArray[i] = 0
-				carry = 1
-			} else {
-				carry = 0
-			}
+			// 没有进位
 		} else {
-			resultArray[i] = carry
-		}
+			switch {
+			case a[i] == '1' && b[i+dis] == '1':
+				res[idx] = '0'
+				idx--
+				carry = true
 
+			case a[i] == '1' || b[i+dis] == '1':
+				res[idx] = '1'
+				idx--
+				carry = false
+
+			case a[i] == '0' && b[i+dis] == '0':
+				res[idx] = '0'
+				idx--
+				carry = false
+			}
+		}
 	}
-	resultStr := ""
-	for j := 0; j <= lengthLonger; j++ {
-		resultStr = resultStr + strconv.Itoa(resultArray[j])
+
+	// 开始对长的字符串单独操作
+	for i := len(b) - len(a) - 1; i >= 0; i-- {
+		switch {
+		case b[i] == '0' && carry:
+			res[idx] = '1'
+			idx--
+			carry = false
+		case b[i] == '1' && carry:
+			res[idx] = '0'
+			idx--
+			carry = true
+		case b[i] == '0' && !carry:
+			res[idx] = '0'
+			idx--
+			carry = false
+		case b[i] == '1' && !carry:
+			res[idx] = '1'
+			idx--
+			carry = false
+		}
 	}
-	if resultStr[0:1] == "0" {
-		return resultStr[1 : lengthLonger+1]
-	} else {
-		return resultStr
+
+	if carry {
+		res[0] = '1'
+		return string(res)
 	}
+
+	return string(res[1:])
 
 }

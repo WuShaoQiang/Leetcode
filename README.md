@@ -193,3 +193,11 @@ leetcode with test file
 - 653_findTarget
 
 - 669_trimBST
+
+- 671_findSecondMinimumValue
+
+- 687_longestUnivaluePath
+
+- 700_searchBST
+
+- 783_minDiffInBST

@@ -6,8 +6,8 @@ import (
 )
 
 var (
-	haystack = []string{"hello", "aaaaa"}
-	needle   = []string{"ll", "bba"}
+	haystack = []string{"hello", "aaaaa", "mississippi"}
+	needle   = []string{"ll", "bba", "sipp"}
 )
 
 func TestStrStr(t *testing.T) {
