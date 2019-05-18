@@ -5,6 +5,22 @@ type ListNode struct {
 	Next *ListNode
 }
 
+/*
+Reverse a singly linked list.
+
+Example:
+
+Input: 1->2->3->4->5->NULL
+Output: 5->4->3->2->1->NULL
+
+Follow up:
+
+A linked list can be reversed either iteratively or recursively. Could you implement both?
+*/
+
+// Runtime: 0 ms, faster than 100.00% of Go online submissions for Reverse Linked List.
+// Memory Usage: 2.5 MB, less than 67.14% of Go online submissions for Reverse Linked List.
+
 func reverseList(head *ListNode) *ListNode {
 	if head == nil {
 		return nil

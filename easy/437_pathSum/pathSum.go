@@ -32,8 +32,8 @@ type TreeNode struct {
 // 2.  5 -> 2 -> 1
 // 3.  -3 -> 11
 
-// 执行用时 : 20 ms, 在Path Sum III的Go提交中击败了87.72% 的用户
-// 内存消耗 : 4.6 MB, 在Path Sum III的Go提交中击败了47.06% 的用户
+// Runtime: 12 ms, faster than 85.54% of Go online submissions for Path Sum III.
+// Memory Usage: 4.3 MB, less than 89.92% of Go online submissions for Path Sum III.
 
 func pathSum(root *TreeNode, sum int) int {
 	if root == nil {

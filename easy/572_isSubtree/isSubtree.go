@@ -98,8 +98,8 @@ type TreeNode struct {
 // 	return true
 // }
 
-// 执行用时 : 28 ms, 在Subtree of Another Tree的Go提交中击败了88.68% 的用户
-// 内存消耗 : 6.3 MB, 在Subtree of Another Tree的Go提交中击败了77.78% 的用户
+// Runtime: 20 ms, faster than 83.13% of Go online submissions for Subtree of Another Tree.
+// Memory Usage: 6.2 MB, less than 62.12% of Go online submissions for Subtree of Another Tree.
 
 func isSubtree(s *TreeNode, t *TreeNode) bool {
 	if s == nil {

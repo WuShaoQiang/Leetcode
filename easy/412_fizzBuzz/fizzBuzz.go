@@ -35,8 +35,8 @@ import (
 //     "FizzBuzz"
 // ]
 
-// 执行用时 : 160 ms, 在Fizz Buzz的Go提交中击败了99.21% 的用户
-// 内存消耗 : 69.7 MB, 在Fizz Buzz的Go提交中击败了18.18% 的用户
+// Runtime: 96 ms, faster than 99.11% of Go online submissions for Fizz Buzz.
+// Memory Usage: 189.4 MB, less than 14.75% of Go online submissions for Fizz Buzz.
 
 func fizzBuzz(n int) []string {
 	res := make([]string, n)

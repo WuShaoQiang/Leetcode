@@ -5,9 +5,29 @@ type ListNode struct {
 	Next *ListNode
 }
 
+/*
+Given a singly linked list, determine if it is a palindrome.
+
+Example 1:
+
+Input: 1->2
+Output: false
+
+Example 2:
+
+Input: 1->2->2->1
+Output: true
+
+Follow up:
+Could you do it in O(n) time and O(1) space?
+*/
+
+// Runtime: 12 ms, faster than 99.70% of Go online submissions for Palindrome Linked List.
+// Memory Usage: 5.9 MB, less than 95.70% of Go online submissions for Palindrome Linked List.
+
 func isPalindrome(head *ListNode) bool {
 	if head == nil {
-		return false
+		return true
 	}
 	fast := head
 	slow := head

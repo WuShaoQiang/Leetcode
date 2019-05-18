@@ -1,5 +1,16 @@
 package countPrimes
 
+/*
+Count the number of prime numbers less than a non-negative number, n.
+
+Example:
+
+Input: 10
+Output: 4
+Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
+
+*/
+
 // func countPrimes(n int) int {
 // 	if n < 3 {
 // 		return 0
@@ -21,6 +32,9 @@ package countPrimes
 // 	return num
 
 // }
+
+// Runtime: 8 ms, faster than 88.25% of Go online submissions for Count Primes.
+// Memory Usage: 5 MB, less than 80.95% of Go online submissions for Count Primes.
 
 func countPrimes(n int) int {
 	if n < 3 {

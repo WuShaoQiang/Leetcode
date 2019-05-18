@@ -63,8 +63,8 @@ type TreeNode struct {
 // 	return root.Val + subtreeSum(root.Right) + subtreeSum(root.Left)
 // }
 
-// 执行用时 : 372 ms, 在Convert BST to Greater Tree的Go提交中击败了100.00% 的用户
-// 内存消耗 : 72 MB, 在Convert BST to Greater Tree的Go提交中击败了67.74% 的用户
+// Runtime: 196 ms, faster than 97.16% of Go online submissions for Convert BST to Greater Tree.
+// Memory Usage: 272.6 MB, less than 40.65% of Go online submissions for Convert BST to Greater Tree.
 
 // 用反转中序遍历
 func convertBST(root *TreeNode) *TreeNode {

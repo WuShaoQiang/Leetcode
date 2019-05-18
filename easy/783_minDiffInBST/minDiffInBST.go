@@ -34,8 +34,8 @@ Note:
     The BST is always valid, each node's value is an integer, and each node's value is different.
 */
 
-// 执行用时 : 4 ms, 在Minimum Distance Between BST Nodes的Go提交中击败了95.24% 的用户
-// 内存消耗 : 2.4 MB, 在Minimum Distance Between BST Nodes的Go提交中击败了76.19% 的用户
+// Runtime: 0 ms, faster than 100.00% of Go online submissions for Minimum Distance Between BST Nodes.
+// Memory Usage: 2.4 MB, less than 43.90% of Go online submissions for Minimum Distance Between BST Nodes.
 
 // 这个题好像前面也有,如果用数组的思想
 func minDiffInBST(root *TreeNode) int {

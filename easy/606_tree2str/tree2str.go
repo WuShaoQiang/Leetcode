@@ -67,9 +67,8 @@ type TreeNode struct {
 // 	return fmt.Sprintf("%d", t.Val)
 
 // }
-
-// 执行用时 : 16 ms, 在Construct String from Binary Tree的Go提交中击败了100.00% 的用户
-// 内存消耗 : 7.1 MB, 在Construct String from Binary Tree的Go提交中击败了93.33% 的用户
+// Runtime: 8 ms, faster than 100.00% of Go online submissions for Construct String from Binary Tree.
+// Memory Usage: 7.3 MB, less than 69.57% of Go online submissions for Construct String from Binary Tree.
 
 func tree2str(t *TreeNode) string {
 	if t == nil {

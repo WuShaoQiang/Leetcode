@@ -1,5 +1,22 @@
 package SumRange
 
+/*
+Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.
+
+Example:
+
+Given nums = [-2, 0, 3, -5, 2, -1]
+
+sumRange(0, 2) -> 1
+sumRange(2, 5) -> -1
+sumRange(0, 5) -> -3
+
+Note:
+
+    You may assume that the array does not change.
+    There are many calls to sumRange function.
+*/
+
 // 自己的方法
 
 // type NumArray struct {
@@ -55,6 +72,9 @@ package SumRange
 
 // 	return currSum
 // }
+
+// Runtime: 36 ms, faster than 88.09% of Go online submissions for Range Sum Query - Immutable.
+// Memory Usage: 10.7 MB, less than 22.22% of Go online submissions for Range Sum Query - Immutable.
 
 // 参考最优答案
 type NumArray struct {

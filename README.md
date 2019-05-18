@@ -201,3 +201,15 @@ leetcode with test file
 - 700_searchBST
 
 - 783_minDiffInBST
+
+- 872_leafSimilar
+
+- 897_increasingBST
+
+- 938_rangeSumBST
+
+- 965_isUnivalTree
+
+- 993_isCousins
+
+- 1022_sumRootToLeaf

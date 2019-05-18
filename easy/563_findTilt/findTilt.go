@@ -30,8 +30,8 @@ type TreeNode struct {
 //     任何子树的结点的和不会超过32位整数的范围。
 //     坡度的值不会超过32位整数的范围。
 
-// 执行用时 : 8 ms, 在Binary Tree Tilt的Go提交中击败了100.00% 的用户
-// 内存消耗 : 6.2 MB, 在Binary Tree Tilt的Go提交中击败了31.58% 的用户
+// Runtime: 12 ms, faster than 100.00% of Go online submissions for Binary Tree Tilt.
+// Memory Usage: 6 MB, less than 78.72% of Go online submissions for Binary Tree Tilt.
 
 func findTilt(root *TreeNode) int {
 	var sum int

@@ -45,8 +45,8 @@ Note: The given binary tree has not more than 10000 nodes. The height of the tre
 
 */
 
-// 执行用时 : 104 ms, 在Longest Univalue Path的Go提交中击败了100.00% 的用户
-// 内存消耗 : 16.4 MB, 在Longest Univalue Path的Go提交中击败了5.56% 的用户
+// Runtime: 68 ms, faster than 100.00% of Go online submissions for Longest Univalue Path.
+// Memory Usage: 6.9 MB, less than 82.14% of Go online submissions for Longest Univalue Path.
 
 // 与第543题类似,这道题是参考别人的答案做出来的
 func longestUnivaluePath(root *TreeNode) int {

@@ -40,8 +40,8 @@ Output: -1
 Explanation: The smallest value is 2, but there isn't any second smallest value.
 */
 
-// 执行用时 : 0 ms, 在Second Minimum Node In a Binary Tree的Go提交中击败了100.00% 的用户
-// 内存消耗 : 2 MB, 在Second Minimum Node In a Binary Tree的Go提交中击败了37.50% 的用户
+// Runtime: 0 ms, faster than 100.00% of Go online submissions for Second Minimum Node In a Binary Tree.
+// Memory Usage: 2 MB, less than 37.78% of Go online submissions for Second Minimum Node In a Binary Tree.
 
 // 有点像层级遍历
 func findSecondMinimumValue(root *TreeNode) int {

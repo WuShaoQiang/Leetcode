@@ -26,8 +26,8 @@ type TreeNode struct {
     节点值的范围在32位有符号整数范围内。
 */
 
-// 执行用时 : 28 ms, 在Average of Levels in Binary Tree的Go提交中击败了97.44% 的用户
-// 内存消耗 : 8.1 MB, 在Average of Levels in Binary Tree的Go提交中击败了9.09% 的用户
+// Runtime: 12 ms, faster than 100.00% of Go online submissions for Average of Levels in Binary Tree.
+// Memory Usage: 7.8 MB, less than 46.48% of Go online submissions for Average of Levels in Binary Tree.
 
 func averageOfLevels(root *TreeNode) []float64 {
 	if root == nil {

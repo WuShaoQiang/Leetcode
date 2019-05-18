@@ -32,8 +32,8 @@ Note that an empty tree is represented by NULL, therefore you would see the expe
 
 */
 
-// 执行用时 : 36 ms, 在Search in a Binary Search Tree的Go提交中击败了96.10% 的用户
-// 内存消耗 : 6.5 MB, 在Search in a Binary Search Tree的Go提交中击败了60.00% 的用户
+// Runtime: 28 ms, faster than 66.23% of Go online submissions for Search in a Binary Search Tree.
+// Memory Usage: 6.7 MB, less than 5.38% of Go online submissions for Search in a Binary Search Tree.
 
 // 比较简单
 func searchBST(root *TreeNode, val int) *TreeNode {

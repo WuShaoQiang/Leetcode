@@ -2,8 +2,37 @@ package thirdMax
 
 import "math"
 
-// 执行用时 : 16 ms, 在Third Maximum Number的Go提交中击败了27.08% 的用户
-// 内存消耗 : 4 MB, 在Third Maximum Number的Go提交中击败了23.33% 的用户
+/*
+Given a non-empty array of integers, return the third maximum number in this array. If it does not exist, return the maximum number. The time complexity must be in O(n).
+
+Example 1:
+
+Input: [3, 2, 1]
+
+Output: 1
+
+Explanation: The third maximum is 1.
+
+Example 2:
+
+Input: [1, 2]
+
+Output: 2
+
+Explanation: The third maximum does not exist, so the maximum (2) is returned instead.
+
+Example 3:
+
+Input: [2, 2, 3, 1]
+
+Output: 1
+
+Explanation: Note that the third maximum here means the third maximum distinct number.
+Both numbers with value 2 are both considered as second maximum.
+*/
+
+// Runtime: 4 ms, faster than 100.00% of Go online submissions for Third Maximum Number.
+// Memory Usage: 3.9 MB, less than 10.74% of Go online submissions for Third Maximum Number.
 
 func thirdMax(nums []int) int {
 	max := make([]int, 3)

@@ -127,8 +127,8 @@ Output:
 
 // 递归做法
 
-// 执行用时 : 24 ms, 在Trim a Binary Search Tree的Go提交中击败了96.77% 的用户
-// 内存消耗 : 6.9 MB, 在Trim a Binary Search Tree的Go提交中击败了53.33% 的用户
+// Runtime: 8 ms, faster than 100.00% of Go online submissions for Trim a Binary Search Tree.
+// Memory Usage: 6.1 MB, less than 74.16% of Go online submissions for Trim a Binary Search Tree.
 
 func trimBST(root *TreeNode, L int, R int) *TreeNode {
 	if root == nil {

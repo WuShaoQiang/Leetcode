@@ -59,8 +59,8 @@ type TreeNode struct {
 // 	}
 // }
 
-// 执行用时 : 20 ms, 在Find Mode in Binary Search Tree的Go提交中击败了100.00% 的用户
-// 内存消耗 : 5.9 MB, 在Find Mode in Binary Search Tree的Go提交中击败了88.24% 的用户
+// Runtime: 8 ms, faster than 100.00% of Go online submissions for Find Mode in Binary Search Tree.
+// Memory Usage: 5.8 MB, less than 100.00% of Go online submissions for Find Mode in Binary Search Tree.
 
 func findMode(root *TreeNode) []int {
 	if root == nil {

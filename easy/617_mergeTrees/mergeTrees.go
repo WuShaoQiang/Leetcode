@@ -72,6 +72,9 @@ type TreeNode struct {
 // 	return
 // }
 
+// Runtime: 28 ms, faster than 96.52% of Go online submissions for Merge Two Binary Trees.
+// Memory Usage: 8.8 MB, less than 12.77% of Go online submissions for Merge Two Binary Trees.
+
 // 递归的做法
 func mergeTrees(t1 *TreeNode, t2 *TreeNode) *TreeNode {
 	if t1 == nil && t2 == nil {

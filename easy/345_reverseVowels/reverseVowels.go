@@ -1,5 +1,24 @@
 package reverseVowels
 
+/*
+Write a function that takes a string as input and reverse only the vowels of a string.
+
+Example 1:
+
+Input: "hello"
+Output: "holle"
+
+Example 2:
+
+Input: "leetcode"
+Output: "leotcede"
+
+Note:
+The vowels does not include the letter "y".*/
+
+// Runtime: 4 ms, faster than 97.22% of Go online submissions for Reverse Vowels of a String.
+// Memory Usage: 4.1 MB, less than 76.55% of Go online submissions for Reverse Vowels of a String.
+
 func reverseVowels(s string) string {
 	b := []byte(s)
 	// m := map[byte]bool{

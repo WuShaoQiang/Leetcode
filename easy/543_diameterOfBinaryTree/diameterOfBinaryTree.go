@@ -88,8 +88,8 @@ type TreeNode struct {
 // 	return b
 // }
 
-// 执行用时 : 4 ms, 在Diameter of Binary Tree的Go提交中击败了100.00% 的用户
-// 内存消耗 : 4.6 MB, 在Diameter of Binary Tree的Go提交中击败了66.67% 的用户
+// Runtime: 4 ms, faster than 99.47% of Go online submissions for Diameter of Binary Tree.
+// Memory Usage: 4.5 MB, less than 77.18% of Go online submissions for Diameter of Binary Tree.
 
 func diameterOfBinaryTree(root *TreeNode) int {
 	var maxH int

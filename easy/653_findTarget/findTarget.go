@@ -38,6 +38,9 @@ Target = 28
 Output: False
 */
 
+// Runtime: 24 ms, faster than 97.99% of Go online submissions for Two Sum IV - Input is a BST.
+// Memory Usage: 7.2 MB, less than 71.54% of Go online submissions for Two Sum IV - Input is a BST.
+
 // 第一思路,换成数组,利用双边夹方法
 func findTarget(root *TreeNode, k int) bool {
 	if root == nil {
