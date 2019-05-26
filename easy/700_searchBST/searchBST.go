@@ -32,8 +32,8 @@ Note that an empty tree is represented by NULL, therefore you would see the expe
 
 */
 
-// Runtime: 28 ms, faster than 66.23% of Go online submissions for Search in a Binary Search Tree.
-// Memory Usage: 6.7 MB, less than 5.38% of Go online submissions for Search in a Binary Search Tree.
+// Runtime: 24 ms, faster than 98.70% of Go online submissions for Search in a Binary Search Tree.
+// Memory Usage: 6.6 MB, less than 59.14% of Go online submissions for Search in a Binary Search Tree.
 
 // 比较简单
 func searchBST(root *TreeNode, val int) *TreeNode {
@@ -51,3 +51,19 @@ func searchBST(root *TreeNode, val int) *TreeNode {
 
 	return searchBST(root.Right, val)
 }
+
+// Runtime: 24 ms, faster than 98.70% of Go online submissions for Search in a Binary Search Tree.
+// Memory Usage: 6.6 MB, less than 98.92% of Go online submissions for Search in a Binary Search Tree.
+
+// func searchBST(root *TreeNode, val int) *TreeNode{
+//     for root != nil{
+//         if root.Val == val{
+//             return root
+//         }else if root.Val > val{
+//             root = root.Left
+//         }else{
+//             root = root.Right
+//         }
+//     }
+//     return nil
+// }
