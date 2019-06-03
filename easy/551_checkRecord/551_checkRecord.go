@@ -46,6 +46,5 @@ func checkRecord(s string) bool {
 			}
 		}
 	}
-
 	return true
 }
