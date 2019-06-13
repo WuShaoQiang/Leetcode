@@ -22,4 +22,30 @@ Bonus point if you are able to do this using only O(n) extra space, where n is t
 
 func minimumTotal(triangle [][]int) int {
 	res := make([]int, len(triangle))
+	for i:=0;i<len(triangle);i++{
+
+	}
+}
+
+func minPath(triangle [][]int,i,j int) int{
+	if i == 0{
+		return triangle[0][0]
+	}
+
+	if j == 0 {
+		return triangle[i][0]+minPath(triangle,i-1,0)
+	}
+
+	if j == len(triangle[i])-1{
+		return 
+	}
+
+
+}
+
+func min(x,y int)int{
+	if x<y{
+		return x
+	}
+	return y
 }
